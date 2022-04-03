@@ -1,0 +1,28 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    background-color: black;
+}
+.navbar{
+    background-color: rgb(13, 193, 225);
+}
+.nav-link{
+    color: white !important;
+}
+.card-header,.card-footer{
+    background-color: rgb(13, 193, 225);
+    border-radius: 0 !important;
+}
+.card1{
+    border-style: hidden;
+}
+.card-body{
+    background-color: black;
+}
+.btn{
+    background-color: rgb(13, 193, 225);
+}
+footer{
+    /*background-color: rgb(13, 203, 236);*/
+    background-color: rgb(13, 193, 225);
+}
