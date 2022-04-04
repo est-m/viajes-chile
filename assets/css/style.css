@@ -1,28 +1,101 @@
+/*tipo de fuente y color*/
 body{
     font-family: 'Cabin', sans-serif;
     color: white;
     background-color: black;
 }
-.navbar{
-    background-color: rgb(13, 193, 225);
+/*margen barra de navegación*/
+.cont,.navbar{
+    margin-left: calc(9.896vw - 0.4167rem);
+    margin-right: calc(9.896vw - 0.4167rem);  
 }
-.nav-link{
-    color: white !important;
+/*tamaño logo barra de navegación*/
+#logo-nav{
+    max-width: 20px;
+}
+/*estilo generales de tarjetas*/
+.card-title{
+    font-size: 17.5px;
+}
+.card-body{
+    background-color: black;
+    font-size: 13.5px;
+}
+.card-img-top{
+    max-height: 120px;
+    overflow: hidden;
+}
+/*margen sección "¿QUIENES SOMOS?"*/
+.cont-0{
+    margin-left: calc(8.854vw - 0.2083rem);
+    margin-right: calc(8.854vw - 0.2083rem);  
+}
+/*línea de separación 1*/
+#line-1{
+    border-style: solid;
+    border-color: gray;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+/*Estilos en tarjetas seccipon "¿QUIENES SOMOS?"*/
+.card{
+    min-width:  200px;
+}
+.ico-s1{
+    font-size: 2rem;
 }
 .card-header,.card-footer{
     background-color: rgb(13, 193, 225);
     border-radius: 0 !important;
 }
+/*Estilos tarjetas sección "DESTACADOS"*/
+.cb1{
+    background-color: rgb(13, 193, 225) !important;
+}
 .card1{
-    border-style: hidden;
+    max-width: 330px;
+    margin: 10px;
+    min-height: 301px;
+    border-style: hidden; 
 }
-.card-body{
-    background-color: black;
+/*línea de separación 2*/
+#line-2{
+    border-style: solid;
+    border-color: gray;
+    border-width: 0;
+    border-bottom-width: 1px;
 }
+/*línea de separación 3*/
+#line-3{
+    border-style: solid;
+    border-color: gray;
+    border-width: 0;
+    border-bottom-width: 1px;
+}
+/*estilos formulario de contacto*/
 .btn{
     background-color: rgb(13, 193, 225);
 }
+#exampleInputSubject{
+    margin-bottom: 15px;
+}
+textarea{
+    border-radius: 0.25rem;
+}
+/*estilos pie de página*/
 footer{
-    /*background-color: rgb(13, 203, 236);*/
     background-color: rgb(13, 193, 225);
+    height: calc(19.17rem - 17.71vw);
+}
+#fl{
+    min-width: 170px;
+    font-size: 28px;
+}
+#frss{
+    min-width: 182px;
+}
+.fa-brands{
+    text-decoration: none;
+    color: white;
+    font-size: calc(3.667rem - 2.083vw);
 }
