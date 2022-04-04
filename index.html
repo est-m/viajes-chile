@@ -18,14 +18,15 @@
     </head>
     <body>
         <!--barra de navegación-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top"><!--barra de navegación fija-->
+        <nav id="nav-bar" class="navbar navbar-expand-lg navbar-dark"><!--barra de navegación fija-->
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><span><img id="logo-nav" src="assets\img\viajes.svg"></span> Viajes Chile</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav"><!--smooth scroll-->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <!--smooth scroll links-->
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                         <a class="nav-link" href="#qs">Quienes somos</a>
                         <a class="nav-link" href="#ds">Destacados</a>
@@ -37,20 +38,15 @@
         <!--carrusel-->
         <section><!--Carrusel de imágenes de bootstrap-->
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets\img\carousel1.jpg" class="d-block w-100" alt="...">
+                        <img src="assets\img\carousel1.jpg" class="d-block w-100" alt="carousel_img_1">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets\img\carousel2.jpg" class="d-block w-100" alt="...">
+                        <img src="assets\img\carousel2.jpg" class="d-block w-100" alt="carousel_img_2">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets\img\carousel3.jpg" class="d-block w-100" alt="...">
+                        <img src="assets\img\carousel3.jpg" class="d-block w-100" alt="carousel_img_3">
                     </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -125,7 +121,7 @@
             <div class="row justify-content-center"><!--grilla y ajuste de márgenes de bootstrap-->
                 <div class="col">
                     <div class="card cdf mb-5">
-                        <img src="assets\img\card1.jpg" class="card-img-top" alt="destino_1" data-toggle="tooltip" title="Últimas unidades">
+                        <img src="assets\img\card1.jpg" class="card-img-top" alt="destino_1" data-toggle="tooltip" title="Últimos disponibles">
                         <div class="card-body cb1">
                             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">
