@@ -8,18 +8,18 @@ body{
     color: white;
     background-color: black;
 }
-/*margen barra de navegación*/
+/*estilos barra de navegación*/
 #nav-bar{
     top:0;
     transition: top 0.6s;
     position: fixed;
     z-index: 1;  
+    background-color: #ffffff00;
 }
 .cont,.navbar{
     margin-left: calc(9.896vw - 0.4167rem);
     margin-right: calc(9.896vw - 0.4167rem);  
 }
-/*tamaño logo barra de navegación*/
 #logo-nav{
     max-width: 20px;
 }
