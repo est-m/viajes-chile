@@ -1,3 +1,7 @@
+/*smooth scroll*/
+html{
+    scroll-behavior: smooth;
+}
 /*tipo de fuente y color*/
 body{
     font-family: 'Cabin', sans-serif;
@@ -14,6 +18,9 @@ body{
     max-width: 20px;
 }
 /*estilo generales de tarjetas*/
+.card{
+    min-width:  200px;
+}
 .card-title{
     font-size: 17.5px;
 }
@@ -22,13 +29,9 @@ body{
     font-size: 13.5px;
 }
 .card-img-top{
-    max-height: 120px;
+    min-height: 120px;
+    height: calc(12.5vw - 2.5rem);
     overflow: hidden;
-}
-/*margen sección "¿QUIENES SOMOS?"*/
-.cont-0{
-    margin-left: calc(8.854vw - 0.2083rem);
-    margin-right: calc(8.854vw - 0.2083rem);  
 }
 /*línea de separación 1*/
 #line-1{
@@ -37,9 +40,10 @@ body{
     border-width: 0;
     border-bottom-width: 1px;
 }
-/*Estilos en tarjetas seccipon "¿QUIENES SOMOS?"*/
-.card{
-    min-width:  200px;
+/*margen sección "¿QUIENES SOMOS?"*/
+.cont-0{
+    margin-left: calc(8.854vw - 0.2083rem);
+    margin-right: calc(8.854vw - 0.2083rem);  
 }
 .ico-s1{
     font-size: 2rem;
@@ -49,14 +53,18 @@ body{
     border-radius: 0 !important;
 }
 /*Estilos tarjetas sección "DESTACADOS"*/
+.cdf{
+    border-color: gray;
+}
 .cb1{
     background-color: rgb(13, 193, 225) !important;
 }
 .card1{
-    max-width: 330px;
+    /*max-width: 330px;*/
     margin: 10px;
     min-height: 301px;
-    border-style: hidden; 
+    border-style: hidden;
+    min-width: 317px; 
 }
 /*línea de separación 2*/
 #line-2{
@@ -86,13 +94,19 @@ textarea{
 footer{
     background-color: rgb(13, 193, 225);
     height: calc(19.17rem - 17.71vw);
+    min-height: 80px;
 }
 #fl{
-    min-width: 170px;
+    min-width: 250px;
     font-size: 28px;
+    font-weight: 300;
+}
+#fl-0{
+    color: white;
+    text-decoration: none;
 }
 #frss{
-    min-width: 182px;
+    min-width: 250px;
 }
 .fa-brands{
     text-decoration: none;

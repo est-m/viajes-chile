@@ -10,7 +10,7 @@
         <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@100;200;300;400;700&display=swap" rel="stylesheet">
         <!--Font awesome kit-->
         <script src="https://kit.fontawesome.com/2dbf86412e.js" crossorigin="anonymous"></script>
         <!--Hoja de estilos CSS-->
@@ -25,11 +25,11 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav"><!--smooth scroll-->
                         <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">Quienes somos</a>
-                        <a class="nav-link" href="#">Destacados</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#qs">Quienes somos</a>
+                        <a class="nav-link" href="#ds">Destacados</a>
+                        <a class="nav-link" href="#co">Contacto</a>
                     </div>
                 </div>
             </div>
@@ -65,12 +65,12 @@
         </section>
         <!--acerca de la empresa-->
         <section class="my-5 cont-0 d-none d-sm-block">
-            <h3 class="text-center">¿QUIENES SOMOS?</h3>
+            <h3 id="qs" class="text-center">¿QUIENES SOMOS?</h3>
             <div class="mb-4 mt-3 px-5"><div id="line-1" class="container-fluid"></div></div><!--línea de separación-->
             <div class="row justify-content-center"><!--grilla y ajuste de paddind de bootstrap-->
                 <div class="col">
                     <div class="card card1">
-                        <div class="card-header text-center py-1"><i class="ico-s1 fa-solid fa-plane"></i></div>
+                        <div id="tt-1" class="card-header text-center py-1"><i class="ico-s1 fa-solid fa-plane"></i></div>
                         <div class="card-body px-0 pb-0">
                             <p class="card-text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et lectus molestie erat porttitor 
@@ -119,13 +119,13 @@
             </div>
         </section>
         <!--destacados-->
-        <h3 class="text-center mt-5">DESTACADOS</h3>
+        <h3 id="ds" class="text-center mt-5">DESTACADOS</h3>
             <div class="mb-4 mt-3"><div id="line-2" class="container-fluid"></div></div><!--línea de separación-->    
         <section class="cont">    
             <div class="row justify-content-center"><!--grilla y ajuste de márgenes de bootstrap-->
                 <div class="col">
-                    <div class="card mb-5">
-                        <img src="assets\img\card1.jpg" class="card-img-top" alt="destino_1">
+                    <div class="card cdf mb-5">
+                        <img src="assets\img\card1.jpg" class="card-img-top" alt="destino_1" data-toggle="tooltip" title="Últimas unidades">
                         <div class="card-body cb1">
                             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">
@@ -136,8 +136,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-5">
-                        <img src="assets\img\card2.jpg" class="card-img-top" alt="destino_2">
+                    <div class="card cdf mb-5">
+                        <img src="assets\img\card2.jpg" class="card-img-top" alt="destino_2" data-toggle="tooltip" title="30% de descuento durante abril">
                         <div class="card-body cb1">
                             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">
@@ -148,8 +148,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-5">
-                        <img src="assets\img\card3.jpg" class="card-img-top" alt="destino_3">
+                    <div class="card cdf mb-5">
+                        <img src="assets\img\card3.jpg" class="card-img-top" alt="destino_3" data-toggle="tooltip" title="Próximamente">
                         <div class="card-body cb1">
                             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">
@@ -160,8 +160,8 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mb-5">
-                        <img src="assets\img\card4.jpg" class="card-img-top" alt="destino_4">
+                    <div class="card cdf mb-5">
+                        <img src="assets\img\card4.jpg" class="card-img-top" alt="destino_4" data-toggle="tooltip" title="Todo incluido">
                         <div class="card-body cb1">
                             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                             <p class="card-text">
@@ -174,7 +174,7 @@
             </div>
         </section>
         <!--formulario de contacto-->
-        <h3 class="text-center mt-3">CONTACTO</h3>
+        <h3 id="co" class="text-center mt-3">CONTACTO</h3>
         <div id="line-3" class="mb-3 mt-3"><div class="container-fluid"></div></div><!--línea de separación-->
         <section class="cont">       
             <form><!--forulario. ajuste de márgenes con bootstrap-->
@@ -190,17 +190,17 @@
                 <div class="d-flex">     
                     <textarea class="flex-grow-1 mb-3" name="message" rows="6"></textarea>          
                 </div>
-                <div><button type="submit" class="btn btn-primary mb-5">Enviar</button></div>
+                <div><button id="btn-1" type="submit" class="btn btn-primary mb-5">Enviar</button></div>
             </form>
         </section>
         <!--pie de página-->
         <footer class="container-fluid">
             <div class="row pt-3"><!--Grilla padding y posicionamiento con bootstrap-->
                     <div class="col">
-                        <p id="fl"class=" text-center font-monospace">VIAJES CHILE</p>
+                        <p id="fl"class=" text-center font-monospace"><a href="#" id="fl-0">VIAJES CHILE</a></p>
                     </div>
                     <div id="frss" class="col text-center">
-                        <div class="rss d-inline"><a href=""><i class="m-1 fa-brands fa-github-square"></i></a></div>
+                        <div class="rss d-inline"><a href="https://www.giithuuub.commm/viajes-chile"><i class="m-1 fa-brands fa-github-square"></i></a></div>
                         <div class="rss d-inline"><a href=""><i class="m-1 fa-brands fa-linkedin"></i></a></div>
                         <div class="rss d-inline"><a href=""><i class="m-1 fa-brands fa-twitter-square"></i></a></div>
                         <div class="rss d-inline"><a href=""><i class="m-1 fa-brands fa-facebook-square"></i></a></div>    
