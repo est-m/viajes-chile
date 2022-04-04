@@ -30,7 +30,7 @@ body{
 }
 .card-img-top{
     min-height: 120px;
-    height: calc(12.5vw - 2.5rem);
+    height: calc(12.42rem - 6.146vw);
     overflow: hidden;
 }
 /*línea de separación 1*/
